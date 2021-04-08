@@ -3,34 +3,100 @@ body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0;
   background-color: #e6ecf0;
+  max-width:1190px;
 }
 
 
 
 /* TODO: Create CSS for your Twitter Mockup */
-.banner {
-  width: 290px;
-  padding-top:25px;
-  padding-right:40px;
-  padding-left:40px;
-  padding-bottom:40px;
-  z-index:-1;
-  background-color: black;
-}
-.round img {
-  border-radius: 50%;
-  z-index: -1;
-}
-
 .content-wrapper {
-  border-radius:50%;
-  z-index:-1;
   margin: 56px auto;
   color: red
 }
 
 .content-left {
   width:290px;
+  color: black;
+
+  top:80px;
+}
+
+
+.profile-stat-back {
+  position: absolute;
+  background-color: white;
+  top: 130px;
+  height: 135px;
+  width: 290px;
+  z-index:-1;
+}
+.profile-stat-box{
+
+  width: 290px;
+  height: 35px;
+  display: flex;
+
+  justify-content:space-evenly;
+}
+.profile-sub-category{
+  width: 70px;
+
+  font-size: 11pt;
+  font-weight: bold;
+  color:#5E6E79;
+}
+
+.profile-stats{
+  width: 70px;
+  height: 30px;
+
+  font-size: 11pt;
+  font-weight: bold;
+  color:#009EEF;
+  
+}
+.banner {
+  width: 290px;
+  display:block;
+  padding: 20px 60px;
+  position:absolute;
+  z-index:-1;
+  background-color: black;
+  height: 75px;
+}
+
+.profilepic img{
   position: relative;
-  color: blue;
+  border: 2px solid white;
+  border-radius: 50%;
+  left: 25px;
+  top: 50px;
+}
+.profilename {
+  position: relative;
+  text-decoration: underline;
+  font-size: 11pt;
+  font-weight: bold;
+  color: black;
+  top: 10px;
+  left: 115px;
+}
+.profiletag {
+  position:relative;
+  color: gray;
+  font-size: 11pt;
+  top:-10px;
+  left:115px;
+}
+
+.content-center {
+  width: 610px;
+
+}
+
+.content-right {
+  width:290px;
+  color: black;
+  display:flex;
+  flex-direction: column;
 }
