@@ -11,13 +11,15 @@ body {
 /* TODO: Create CSS for your Twitter Mockup */
 .content-wrapper {
   margin: 56px auto;
-  color: red
+  color: red;
+  display: flex;
+  justify-content: space-around;
 }
 
 .content-left {
   width:290px;
   color: black;
-
+  border: solid 1px purple;
   top:80px;
 }
 
@@ -57,7 +59,6 @@ body {
 }
 .banner {
   width: 290px;
-  display:block;
   padding: 20px 60px;
   position:absolute;
   z-index:-1;
@@ -89,14 +90,32 @@ body {
   left:115px;
 }
 
-.content-center {
+.content-middle-wrapper {
+  position:relative;
   width: 610px;
+  left:5px;
+  border: solid 1px green;
+  justify-content: space-evenly;
+}
 
+.content-middle {
+  width: 610px;
+  display: flex;
+}
+.profile-middle {
+  width: 51px;
+  height: 51px;
+  border: solid 1px red;
+}
+.post-middle {
+  height: 51px;
+  width: 550px;
+  border: solid 1px blue;
 }
 
 .content-right {
   width:290px;
+  left: 5px;
   color: black;
-  display:flex;
-  flex-direction: column;
+  border: solid 1px yellow;
 }
