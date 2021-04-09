@@ -66,7 +66,7 @@ body {
 }
 .banner {
   width: 290px;
-  padding: 20px 60px;
+  padding: 20px 50px;
   position:absolute;
   z-index:-1;
   background-color: black;
@@ -75,7 +75,7 @@ body {
 
 .profilepic img{
   position: relative;
-  border: 2px solid white;
+  border: 3px solid white;
   border-radius: 50%;
   left: 25px;
   top: 50px;
@@ -102,8 +102,7 @@ body {
 .content-middle-wrapper {
   position:relative;
   width: 610px;
-  margin-left: 0.5vw;
-  
+  margin-left: 0.5vh;
 
   background-color: white;
 }
@@ -122,7 +121,7 @@ body {
 .profile-middle-block {
   width: 68px;
   height: 51px;
-
+  
 }
 .profile-middle img{
   margin: 8px;
@@ -170,10 +169,136 @@ body {
 
 /* Right Content */
 
-.content-right {
+.content-right-wrapper {
   width:290px;
-  margin-left: 0.5vw;
+  margin-left: 0.5vh;
   left: 5px;
   color: black;
-  border: solid 1px black;
+  background-color: white;
+  border: solid 1px white;
+}
+
+.recommendation-box {
+  width: 260px;
+  height: 90px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.recommendation-msg {
+  width: fit-content;
+  height: 30px;
+  font-size: 15pt;
+  font-weight: bold;
+
+  margin: 20px auto auto 15px;
+}
+
+.recommendation-content-box {
+
+  display: flex;
+  width: 260px;
+  height: 90px;
+
+  border-bottom: solid 1px #E6ECF0;
+
+}
+
+.recommendation-profile-pic-block {
+  
+  width: 50px;
+  height: 80px;
+  margin-top: 4px;
+}
+.recommendation-profile-pic img{
+  border-radius: 50%;
+}
+.recommendation-info-block {
+
+  height: 80px;
+  width: 250px;
+  margin-top: 4px;
+  margin-left: 15px;
+}
+.recommendation-name-tag {
+
+  width: 250px;
+  height: 25px;
+  display: flex;
+}
+.recommendation-name {
+
+  width: fit-content;
+  height: 25px;
+  font-size: 11pt;
+  font-weight: bold;
+
+}
+.recommendation-tag {
+
+
+  width: fit-content;
+  height: 25px;
+  font-size: 11pt;
+  color: gray;
+  margin-left: 5px;
+
+}
+.recommendation-button {
+  border-radius: 25px;
+  border: solid 1px #009EEF;
+  width: 90px;
+  height: 30px;
+  margin-top: 5px;
+
+  display: flex;
+}
+.recommendation-button-text {
+  color: #009EEF;
+  font-weight: bold;
+  margin: 4px auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .content-right-wrapper {
+    display: none;
+  }
+  .recommendation-box {
+    display: none;
+}
+
+  .recommendation-msg {
+    display: none;
+}
+  .recommendation-content-box {
+    display: none;
+}
+
+  .recommendation-profile-pic-block {
+    display: none;
+}
+  .recommendation-profile-pic img {
+    display: none;
+}
+  .recommendation-info-block {
+    display: none;
+}
+  .recommendation-name-tag {
+    display: none;
+}
+  .recommendation-name {
+    display: none;
+}
+  .recommendation-tag {
+    display: none;
+}
+  .recommendation-button {
+    display: none;
+  }
+  .recommendation-button-text {
+    display: none;
+}
+  
+
 }
