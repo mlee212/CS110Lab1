@@ -1,28 +1,35 @@
 /* Feel free to edit CSS of body if you'd like. We provide you the light gray background color and font family in the body styling */
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  margin: 0;
+  margin: 0 auto;
   background-color: #e6ecf0;
-  max-width:1190px;
+
 }
 
 
 
 /* TODO: Create CSS for your Twitter Mockup */
+
+/* Navbar Content */
+
+
+/* Bottom Content */
 .content-wrapper {
   margin: 56px auto;
   color: red;
   display: flex;
   justify-content: space-around;
+
 }
 
+
+/* Left Content */
 .content-left {
   width:290px;
   color: black;
-  border: solid 1px purple;
+
   top:80px;
 }
-
 
 .profile-stat-back {
   position: absolute;
@@ -90,32 +97,83 @@ body {
   left:115px;
 }
 
+/* Middle Content */
+
 .content-middle-wrapper {
   position:relative;
   width: 610px;
-  left:5px;
-  border: solid 1px green;
-  justify-content: space-evenly;
+  margin-left: 0.5vw;
+  
+
+  background-color: white;
 }
 
 .content-middle {
   width: 610px;
+  min-height: 51px;
+  height: auto;
+  overflow: visible;
+  
+  display: flex;
+  padding-bottom: 12px;
+  border-bottom: solid 1px #E6ECF0;
+
+}
+.profile-middle-block {
+  width: 68px;
+  height: 51px;
+
+}
+.profile-middle img{
+  margin: 8px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.post-box {
+
+  width: 550px;
+
+}
+.post-name-tag {
+  margin-top: 8px;
+  width: 300px;
+  height: 25px;
+
+  
   display: flex;
 }
-.profile-middle {
-  width: 51px;
-  height: 51px;
-  border: solid 1px red;
+.post-name {
+  width: fit-content;
+  height: fit-content;
+  color: black;
+  font-weight: bold;
+  font-size: 11pt;
+
 }
-.post-middle {
-  height: 51px;
-  width: 550px;
-  border: solid 1px blue;
+.post-tag {
+  width: fit-content;
+  height: fit-content;
+  color: gray;
+  font-size: 11pt;
+  margin-left: 5px;
 }
+.post-content{
+  width: 450px;
+  height: fit-content;
+  color: black;
+  font-size: 11pt;
+  
+  margin-top: 4px;
+  word-wrap: break-word;
+}
+
+/* Right Content */
 
 .content-right {
   width:290px;
+  margin-left: 0.5vw;
   left: 5px;
   color: black;
-  border: solid 1px yellow;
+  border: solid 1px black;
 }
