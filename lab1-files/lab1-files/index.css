@@ -11,7 +11,56 @@ body {
 /* TODO: Create CSS for your Twitter Mockup */
 
 /* Navbar Content */
+/*@media only screen and (max-width: 992px) {
+  .header-wrapper {
+    display: none;
+  }
+  .mobile-header{
+    display:
+  }
+}
+.mobile-header{
+  display:none;
+}*/
+.center{
+  text-align: center;
+  width: 100%;
+}
+.navbar a{
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #67757f;
+}
+.navbar-nav a:hover {
+  color: #1491e3;
+  text-decoration: underline;
+}
+.navbar-fix {
+  padding-left: 50px !important;
+}
 
+.twitter-icon [class*='icon-']{
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: baseline;
+}
+.tweet-button {
+  border-radius: 25px;
+  border: solid 1px #009EEF;
+  background: #009EEF;
+  width: 90px;
+  height: 30px;
+  margin-top: 5px;
+  display: flex;
+}
+.tweet-button p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin:auto;
+}
 
 /* Bottom Content */
 .content-wrapper {

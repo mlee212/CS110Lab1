@@ -9,17 +9,6 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
     <style>
-      .center{
-        text-align: center;
-        width: 100%;
-      }
-      .navbar-nav a:hover {
-        color: blue;
-        text-decoration: underline lightseagreen;
-      }
-      .navbar a{
-        font-family: Arial, Helvetica, sans-serif;
-      }
     </style>
     <title>Twitter</title>
   </head>
@@ -27,18 +16,41 @@
   <body>
     <!-- TODO: Create HTML elements for Twitter mockup inside body -->
     <!--header-->
-    <div> 
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <div class="collapse navbar-collapse" id="navbarContents">
-            <div class="navbar-nav">
-                <a class="font-weight-bold nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+    <div class = "header-wrapper"> 
+      <nav class="navbar fixed-top navbar-expand-sm bg-white">
+        
+        <div class=" navbar-collapse w-100 order-1 order-md-0" id="navbarContents"> <!--removed collapse-->
+            <div class="navbar-nav mr-auto">
+                <a class="font-weight-bold nav-item nav-link" href="#">Home </a>
                 <a class="font-weight-bold nav-item nav-link" href="#">Moments</a>
                 <a class="font-weight-bold nav-item nav-link" href="#">Notifications</a>
                 <a class="font-weight-bold nav-item nav-link" href="#">Messages</a>
+                <!--   <i class="fas fa-home"></i>
+                <i class="fas fa-hashtag"></i>
+                <i class="far fa-bell"></i>
+                <i class="far fa-envelope"></i>   -->
             </div>
         </div>
-        <i class = "fab fa-twitter center"> </i>
-    </nav>
+
+        <div class=" navbar-collapse w-100 order-0" id="navbarContentsCenter">
+          <div class="mx-auto order-0">
+            <i class = "fab fa-twitter center" style="color: #1491e3;"> </i>
+          </div>
+        </div>
+        
+        <div class=" navbar-collapse w-100 order-3" id="navbarContentsRight">
+          <div class="navbar ml-auto">
+            <div class="navbar-nav">
+              <div class="tweet-button">
+                <p class="tweet-text">
+                  Tweet
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </nav>
     </div>
 
     <!--container-->
