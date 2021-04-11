@@ -11,34 +11,30 @@ body {
 /* TODO: Create CSS for your Twitter Mockup */
 
 /* Navbar Content */
-/*@media only screen and (max-width: 992px) {
-  .header-wrapper {
-    display: none;
-  }
-  .mobile-header{
-    display:
-  }
-}
-.mobile-header{
-  display:none;
-}*/
 .center{
   text-align: center;
   width: 100%;
+}
+.header-wrapper{
+  z-index: 5;
 }
 .navbar a{
   float: left;
   font-family: Arial, Helvetica, sans-serif;
   color: #67757f;
+  margin-left: 30px;
 }
 .navbar-nav a:hover {
   color: #1491e3;
   text-decoration: underline;
 }
 .navbar-fix {
-  padding-left: 50px !important;
+  padding-left: 6px;
 }
-
+nav.navbar {
+  max-width: 1220px; /* applying max-width */
+  margin: 0 auto; /* center */
+}
 .twitter-icon [class*='icon-']{
   height: 50px;
   width: 50px;
@@ -75,11 +71,11 @@ body {
 
 /* Bottom Content */
 .content-wrapper {
-  margin: 76px auto;
+  margin: 56px auto;
   color: red;
   display: flex;
   justify-content: space-around;
-
+  max-width: 1190px;
 }
 
 
@@ -94,8 +90,8 @@ body {
 .profile-stat-back {
   position: absolute;
   background-color: white;
-  top: 150px;
-  height: 135px;
+  top: 130px;
+  height: 145px;
   width: 290px;
   z-index:-1;
 }
@@ -331,7 +327,7 @@ body {
   margin: 4px auto;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .content-right-wrapper {
     display: none;
   }
